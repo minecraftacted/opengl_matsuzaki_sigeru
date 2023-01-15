@@ -2,7 +2,7 @@ name: CMake
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "feature-#3-introduce_cicd" ]
   pull_request:
     branches: [ "master" ]
 
