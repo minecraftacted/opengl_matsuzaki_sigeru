@@ -33,6 +33,7 @@ jobs:
       
     - uses: actions/upload-artifact@v3
       with:
+        name: opengl_matsuzaki_sigeru
         path: ${{github.workspace}}\build\opengl_matsuzaki_sigeru.exe
       
     - name: BuildTest
