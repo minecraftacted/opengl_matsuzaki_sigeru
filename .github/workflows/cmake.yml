@@ -31,6 +31,10 @@ jobs:
       # Build your program with the given configuration
       run: cmake --build ${{github.workspace}}\build --config ${{env.BUILD_TYPE}} --target opengl_matsuzaki_sigeru
       
+    - uses: actions/upload-artifact@v3
+      with:
+        path: ${{github.workspace}}\build\opengl_matsuzaki_sigeru.exe
+      
     - name: BuildTest
       run: cmake --build ${{github.workspace}}\build --config ${{env.BUILD_TYPE}} --target opengl_matsuzaki_sigeru-googletest
 
